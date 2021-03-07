@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XzP-6b-DPh" customClass="MVVMTableViewCell" customModule="MVVM_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XzP-6b-DPh" id="i7x-U5-4Vh">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNh-tQ-Dym">
+                        <rect key="frame" x="20" y="12" width="110" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="QHV-9A-fhW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhl-JW-sjl">
+                        <rect key="frame" x="284" y="12.5" width="110" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="zJG-xv-Rzo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SG8-Dd-zdk">
+                        <rect key="frame" x="152" y="11.5" width="110" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="Qit-FC-Rfz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Yhl-JW-sjl" secondAttribute="trailing" constant="20" symbolic="YES" id="A52-A9-1WB"/>
+                    <constraint firstItem="SG8-Dd-zdk" firstAttribute="leading" secondItem="PNh-tQ-Dym" secondAttribute="trailing" constant="22" id="MN4-V2-3tg"/>
+                    <constraint firstItem="PNh-tQ-Dym" firstAttribute="top" secondItem="i7x-U5-4Vh" secondAttribute="top" constant="12" id="RSo-3R-bFe"/>
+                    <constraint firstAttribute="bottom" secondItem="Yhl-JW-sjl" secondAttribute="bottom" constant="9.5" id="RZU-HZ-QFx"/>
+                    <constraint firstItem="Yhl-JW-sjl" firstAttribute="top" secondItem="i7x-U5-4Vh" secondAttribute="top" constant="12.5" id="WqR-UT-JGi"/>
+                    <constraint firstItem="Yhl-JW-sjl" firstAttribute="leading" secondItem="SG8-Dd-zdk" secondAttribute="trailing" constant="22" id="ZCZ-bX-BzE"/>
+                    <constraint firstAttribute="bottom" secondItem="PNh-tQ-Dym" secondAttribute="bottom" constant="9" id="cxg-VH-fRg"/>
+                    <constraint firstItem="PNh-tQ-Dym" firstAttribute="leading" secondItem="i7x-U5-4Vh" secondAttribute="leading" constant="20" symbolic="YES" id="oDd-TC-59o"/>
+                    <constraint firstItem="SG8-Dd-zdk" firstAttribute="top" secondItem="i7x-U5-4Vh" secondAttribute="top" constant="11.5" id="rOz-bp-LYX"/>
+                    <constraint firstAttribute="bottom" secondItem="SG8-Dd-zdk" secondAttribute="bottom" constant="8.5" id="tL7-U4-VGB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="age" destination="SG8-Dd-zdk" id="TRf-uQ-EBk"/>
+                <outlet property="etc" destination="Yhl-JW-sjl" id="Nsp-FS-fws"/>
+                <outlet property="name" destination="PNh-tQ-Dym" id="VYH-1q-TFP"/>
+            </connections>
+            <point key="canvasLocation" x="-113" y="20"/>
+        </tableViewCell>
+    </objects>
+</document>
