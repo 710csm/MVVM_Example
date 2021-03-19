@@ -9,14 +9,12 @@ import UIKit
 
 class MVVMTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var etc: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-  
     }
     
     public func makeCell(_ person: Person) {

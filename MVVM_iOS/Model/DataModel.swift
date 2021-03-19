@@ -11,10 +11,10 @@ class Person: NSObject {
     
     var name: String = ""
     var age: Int = 0
-    var weight: Double = 0
-    var height: Double = 0
+    var weight: Int  = 0
+    var height: Int  = 0
     
-    init(name: String, age: Int, weight: Double, height: Double) {
+    init(name: String, age: Int, weight: Int , height: Int ) {
         self.name = name
         self.age = age
         self.weight = weight
@@ -23,14 +23,14 @@ class Person: NSObject {
 }
 
 class Model: NSObject {
-    func getPeopleData() -> NSDictionary {
+    func getPeopleData() -> Dictionary<String, Any> {
         return [
             "People":[
-                ["name": "Kim", "age": 28, "weight": 80, "height": 180.0, ],
-                ["name": "Lee", "age": 22, "weight": 70, "height": 167.5, ],
-                ["name": "Park", "age": 20, "weight": 60, "height": 160.1, ],
-                ["name": "Choi", "age": 26, "weight": 75, "height": 175.3, ]
-            ],
+                ["name": "Kim", "age": 28, "weight": 80, "height": 180, ],
+                ["name": "Lee", "age": 22, "weight": 70, "height": 167, ],
+                ["name": "Park", "age": 20, "weight": 60, "height": 160, ],
+                ["name": "Choi", "age": 26, "weight": 75, "height": 175, ]
+            ]
         ]
     }
 }

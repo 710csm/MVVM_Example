@@ -8,23 +8,26 @@
 import Foundation
 
 class ViewModel: NSObject {
-    let model: Model = Model()
-    var peopleData: NSArray!
+    private let model: Model = Model()
+    public var peopleData: Array<Any>
     
     override init() {
-        let data1 = model.getPeopleData()["People"] as! NSArray
-        let data2 = NSMutableArray()
+        let data1 = model.getPeopleData()["People"] as! Array<Any>
+        var data2 = Array<Any>()
         
         for i in 0..<data1.count {
-            let tmpData = data1[i] as! NSDictionary
+            let tmpData = data1[i] as! Dictionary<String, Any>
             let name = tmpData["name"] as! String
             let age = tmpData["age"] as! Int
-            let weight = tmpData["weight"] as! Double
-            let height = tmpData["height"] as! Double
+            let weight = tmpData["weight"] as! Int
+            let height = tmpData["height"] as! Int
             
-            data2.add(Person(name: name, age: age, weight: weight, height: height))
+            data2.append(Person(name: name,
+                             age: age,
+                             weight: weight,
+                             height: height))
         }
         
-        peopleData = NSArray(array: data2)
+        peopleData = Array(data2)
     }
 }

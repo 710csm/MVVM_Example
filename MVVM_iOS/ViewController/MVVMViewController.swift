@@ -37,7 +37,11 @@ extension MVVMViewController:  UITableViewDelegate,
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let person = viewModel.peopleData[indexPath.row] as! Person
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MVVMTableViewCell", for: indexPath) as! MVVMTableViewCell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "MVVMTableViewCell",
+            for: indexPath
+        ) as! MVVMTableViewCell
+        
         cell.makeCell(person)
         return cell
     }
